@@ -1,0 +1,46 @@
+<div>
+  <div class="submit-form">
+    <div *ngIf="!submitted">
+      <div class="form-group mt-3">
+        <label for="title">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="title"
+          required
+          [(ngModel)]="bicycle.name"
+          name="title"
+          placeholder="name"
+        />
+      </div>
+
+      <div class="form-group mt-3">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          required
+          [(ngModel)]="bicycle.email"
+          name="email"
+          placeholder="order@mail.com"
+        />
+      </div>
+
+      <div class="form-group mt-3">
+        <label for="description">Description</label>
+        <input
+          class="form-control"
+          id="description"
+          required
+          [(ngModel)]="bicycle.description"
+          name="description"
+        />
+      </div>
+      <div class="d-flex justify-content-end align-items-center">
+        <button (click)="saveOrder()" class="btn btn-success mt-4">Submit</button>
+      </div>
+
+    </div>
+  </div>
+</div>

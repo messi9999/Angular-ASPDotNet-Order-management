@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\backend-ASPDotNet(2022-web-api).props" />
+</Project>

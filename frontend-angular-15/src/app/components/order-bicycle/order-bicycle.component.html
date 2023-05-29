@@ -2,6 +2,10 @@
   <div class="submit-form">
     <div *ngIf="!submitted">
       <div class="form-group mt-3">
+        <div class="fs-3 fw-bolder">
+          <label for="title">Bicycle Order</label>
+        </div>
+
         <label for="title">Name</label>
         <input
           type="text"
@@ -29,13 +33,14 @@
 
       <div class="form-group mt-3">
         <label for="description">Description</label>
-        <input
+        <textarea
           class="form-control"
           id="description"
           required
           [(ngModel)]="bicycle.description"
           name="description"
-        />
+          rows="10"
+        ></textarea>>
       </div>
       <div class="d-flex justify-content-end align-items-center">
         <button (click)="saveOrder()" class="btn btn-success mt-4">Submit</button>

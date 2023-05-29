@@ -2,6 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { OrderBicycleComponent } from './order-bicycle.component';
 
+import "bootstrap/dist/css/bootstrap.min.css";
+
 describe('OrderBicycleComponent', () => {
   let component: OrderBicycleComponent;
   let fixture: ComponentFixture<OrderBicycleComponent>;
